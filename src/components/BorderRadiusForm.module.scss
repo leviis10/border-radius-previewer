@@ -1,0 +1,19 @@
+.border-radius-form {
+  max-width: 50rem;
+  margin: 1.4rem auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.2rem;
+  margin-bottom: 2rem;
+
+  label {
+    font-size: 1.4rem;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
