@@ -6,7 +6,7 @@ import type { RootState } from "../store";
 
 function CSSCode() {
   const [isTextCopied, setIsTextCopied] = useState(false);
-  const { state } = useSelector((state: RootState) => state);
+  const { borderRadiusText } = useSelector((state: RootState) => state);
 
   function copyCodeHandler() {
     navigator.clipboard.writeText(
@@ -19,7 +19,7 @@ function CSSCode() {
   return (
     <div className={styles.container}>
       <code className={styles["border-radius-code"]} id="borderRadiusCode">
-        border-radius: {state.borderRadiusText};
+        border-radius: {borderRadiusText};
       </code>
       <button onClick={copyCodeHandler}>
         {isTextCopied ? "Copied" : "Copy this Code"}

@@ -21,7 +21,7 @@ enum BorderPoint {
 function BorderRadiusForm() {
   const dispatch = useDispatch();
   const { topLeft, topRight, bottomLeft, bottomRight } = useSelector(
-    (state: RootState) => state.state
+    (state: RootState) => state
   );
 
   function inputChangeHandler(e: ChangeEvent<HTMLInputElement>) {

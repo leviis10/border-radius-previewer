@@ -7,7 +7,7 @@ import type { RootState } from "../store";
 
 function Box() {
   const [boxSize, setBoxSize] = useState(30);
-  const { borderRadiusText } = useSelector((state: RootState) => state.state);
+  const { borderRadiusText } = useSelector((state: RootState) => state);
 
   function boxSizeChangeHandler(e: ChangeEvent<HTMLInputElement>) {
     setBoxSize(parseFloat(e.target.value));
